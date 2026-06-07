@@ -11,11 +11,11 @@ export default function FinalCTA() {
         <FadeIn>
           <div className="final-cta-card">
             <p className="eyebrow">Ready to pull up?</p>
-            <h2>Check today’s menu before it’s gone.</h2>
+            <h2>Call ahead before the favorites are gone.</h2>
             <p>
-              Bayou Bella’s menu changes often and favorites can sell out. Call
-              ahead or check Facebook for the latest lineup before you head to
-              the truck.
+              Bayou Bella’s menu changes often and customer favorites can sell
+              out. Call ahead or check Facebook for today’s lineup, hours, and
+              any sellout updates before you head to the truck.
             </p>
 
             <div className="btn-row">

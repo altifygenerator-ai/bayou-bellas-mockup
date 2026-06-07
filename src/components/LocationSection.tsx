@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
+import { LuClock, LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import FadeIn from "@/components/FadeIn";
 import SectionHeading from "@/components/SectionHeading";
 import { siteData } from "@/data/site";
@@ -12,13 +12,18 @@ export default function LocationSection() {
           <SectionHeading
             eyebrow="Find the truck"
             title="Serving Cajun comfort food in Glenwood."
-            text="Bayou Bella’s & Biscuits is located on Hwy 70 in Glenwood, Arkansas. Since the food truck menu and hours can change, call ahead or check Facebook before you head over."
+            text="Bayou Bella’s & Biscuits is parked at 242 Hwy 70 in Glenwood, Arkansas, in the old McGrew’s parking lot. Since the menu can change and favorites can sell out, call ahead or check Facebook before you head over."
           />
 
           <div className="location-info-card">
             <div>
               <LuMapPin />
               <span>{siteData.address}</span>
+            </div>
+
+            <div>
+              <LuClock />
+              <span>{siteData.hoursShort}</span>
             </div>
 
             <div>
@@ -38,9 +43,9 @@ export default function LocationSection() {
             <p className="eyebrow">Glenwood, Arkansas</p>
             <h3>242 Hwy 70</h3>
             <p>
-              Pull up for Cajun and Creole favorites, but check the latest post
-              or call ahead first. Daily specials can change and popular items
-              may sell out.
+              Pull up for Cajun and Creole favorites at the old McGrew’s parking
+              lot. Check the latest post or call ahead first so you know what is
+              cooking and what has already sold out.
             </p>
 
             <div className="btn-row">

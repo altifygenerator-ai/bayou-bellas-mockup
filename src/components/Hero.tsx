@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LuMapPin, LuPhone, LuStar } from "react-icons/lu";
+import { LuClock, LuMapPin, LuPhone, LuStar } from "react-icons/lu";
 import FadeIn from "@/components/FadeIn";
 import { siteData } from "@/data/site";
 
@@ -16,10 +16,9 @@ export default function Hero() {
           </h1>
 
           <p className="hero-text">
-            Bayou Bella’s & Biscuits serves bold Louisiana-style comfort food
-            from a women-owned food truck in Glenwood, Arkansas. The menu
-            changes often, the favorites move fast, and call-ahead is always a
-            good idea.
+            Bayou Bella’s & Biscuits serves Louisiana-style comfort food from a
+            women-owned food truck in Glenwood, Arkansas. The menu changes, the
+            favorites move fast, and calling ahead is always a good idea.
           </p>
 
           <div className="btn-row hero-actions">
@@ -39,8 +38,8 @@ export default function Hero() {
           </div>
 
           <p className="hero-note">
-            Located at {siteData.address}. Check Facebook or call ahead for the
-            latest menu and hours.
+            Located at {siteData.address} in the old McGrew’s parking lot. Check
+            Facebook or call ahead for today’s menu before you pull up.
           </p>
 
           <div className="hero-badge-row">
@@ -48,8 +47,11 @@ export default function Hero() {
               <LuStar />
               100% Recommended
             </span>
-            <span className="badge">9 Facebook Reviews</span>
-            <span className="badge badge-red">Rotating Menu</span>
+            <span className="badge">10 Facebook Reviews</span>
+            <span className="badge badge-red">
+              <LuClock />
+              {siteData.hoursShort}
+            </span>
           </div>
         </FadeIn>
 
@@ -67,15 +69,15 @@ export default function Hero() {
           <div className="hero-floating-card">
             <strong>Menu moves fast.</strong>
             <p>
-              Daily favorites can include gumbo, jambalaya fries, wings, boudin
-              cornbread, Cajun boiled eggs, shrimp Alfredo, bread pudding, and
-              more depending on the day.
+              Recent lineups have included gumbo, jambalaya fries, alligator
+              boudin links, wings, boudin cornbread, garlic butter biscuits,
+              fried rice, and banana pudding.
             </p>
 
             <div className="hero-badge-row">
               <span className="badge badge-gold">Gumbo</span>
               <span className="badge badge-red">Jambalaya Fries</span>
-              <span className="badge">Bread Pudding</span>
+              <span className="badge">Boudin Cornbread</span>
             </div>
           </div>
         </FadeIn>

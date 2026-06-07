@@ -1,4 +1,4 @@
-import { LuMapPin, LuPhone, LuStar, LuUserRoundCheck } from "react-icons/lu";
+import { LuClock, LuMapPin, LuPhone, LuStar, LuUserRoundCheck } from "react-icons/lu";
 import FadeIn from "@/components/FadeIn";
 import { siteData } from "@/data/site";
 
@@ -6,17 +6,22 @@ const trustItems = [
   {
     icon: LuStar,
     label: "100% Recommended",
-    text: "9 Facebook reviews",
+    text: "10 Facebook reviews",
   },
   {
     icon: LuUserRoundCheck,
     label: "Women-Owned",
-    text: "Local food truck",
+    text: "Local Glenwood food truck",
   },
   {
     icon: LuMapPin,
-    label: "Glenwood, AR",
+    label: "Find Us",
     text: "242 Hwy 70",
+  },
+  {
+    icon: LuClock,
+    label: "Hours",
+    text: siteData.hoursShort,
   },
   {
     icon: LuPhone,
@@ -30,7 +35,7 @@ export default function TrustStrip() {
     <section className="trust-strip">
       <div className="container">
         <FadeIn>
-          <div className="trust-grid">
+          <div className="trust-grid trust-grid-five">
             {trustItems.map((item) => {
               const Icon = item.icon;
 

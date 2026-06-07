@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import LocationSection from "@/components/LocationSection";
 import MenuFavorites from "@/components/MenuFavorites";
+import ReviewsSection from "@/components/ReviewsSection";
 import RotatingMenu from "@/components/RotatingMenu";
 import TrustStrip from "@/components/TrustStrip";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <TrustStrip />
       <RotatingMenu />
       <MenuFavorites />
+      <ReviewsSection />
       <LocationSection />
       <AboutSection />
       <GallerySection />

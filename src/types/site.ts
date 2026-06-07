@@ -9,6 +9,12 @@ export type MenuFavorite = {
   tag: string;
 };
 
+export type CustomerReview = {
+  name: string;
+  quote: string;
+  detail?: string;
+};
+
 export type SiteData = {
   name: string;
   category: string;
@@ -19,11 +25,17 @@ export type SiteData = {
   email: string;
   emailHref: string;
   address: string;
+  streetAddress: string;
   city: string;
+  region: string;
+  postalCode: string;
   facebookUrl: string;
   heroImage: string;
   logoImage: string;
+  hours: string;
+  hoursShort: string;
   nav: NavItem[];
   trust: string[];
   menuFavorites: MenuFavorite[];
+  reviews: CustomerReview[];
 };
