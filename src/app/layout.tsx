@@ -54,6 +54,9 @@ export const metadata: Metadata = {
   publisher: "Bayou Bella’s & Biscuits",
   applicationName: "Bayou Bella’s & Biscuits",
   category: "Food & Drink",
+  verification: {
+    google: "FeWzWmQuFpJZKoUihypFjm3VdbQAIzI5ytWNWICSKlA",
+  },
   alternates: {
     canonical: "/",
   },
