@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     url: "/",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Bayou Bella’s & Biscuits Cajun food truck in Glenwood, Arkansas",
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
     title: "Bayou Bella’s & Biscuits | Cajun Food Truck in Glenwood, AR",
     description:
       "Rotating Cajun and Creole favorites in Glenwood, Arkansas. Call ahead for today’s menu before favorites sell out.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -109,7 +109,7 @@ const businessSchema = {
   telephone: siteData.phone,
   email: siteData.email,
   url: "https://www.bayoubellas.net",
-  image: "https://www.bayoubellas.net/og-image.jpg",
+  image: "https://www.bayoubellas.net/og-image.png",
   servesCuisine: ["Cajun", "Creole", "Louisiana", "Southern"],
   address: {
     "@type": "PostalAddress",
